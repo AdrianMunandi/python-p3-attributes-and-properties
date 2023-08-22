@@ -11,5 +11,14 @@ APPROVED_BREEDS = [
     "Pointer"
 ]
 
+
+# dog.py
 class Dog:
-    pass
+    def __init__(self, name, breed):
+        self.name = name
+        if breed in APPROVED_BREEDS:
+            self.breed = breed
+        else:
+            self.breed = None
+
+
